@@ -1,12 +1,13 @@
-import oop from './oop_example';
-class Info {
-    constructor(name) {
-        this.name = name
-    }
-    getName() {
-        return this.name
-    }
-}
+// import oop from './oop_example';
+import './design_principle';
+// class Info {
+//     constructor(name) {
+//         this.name = name
+//     }
+//     getName() {
+//         return this.name
+//     }
+// }
 
-let p = new Info('jack');
-console.log(p.getName());
+// let p = new Info('jack');
+// console.log(p.getName());
