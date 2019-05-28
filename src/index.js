@@ -1,5 +1,7 @@
 // import oop from './oop_example';
-import './design_principle';
+// import './design_principle';
+import './pattern/factory';
+
 // class Info {
 //     constructor(name) {
 //         this.name = name
