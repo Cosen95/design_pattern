@@ -24,3 +24,41 @@ result.then(img => {
 }).catch(err => {
     console.log(err)
 })
+
+// -------------------- 面试题 -----------------------
+
+class Car {
+    constructor(number, name) {
+        this.number = number
+        this.name = name
+    }
+}
+class KuaiChe extends Car {
+    constructor(number, name) {
+        super(number, name)
+        this.price = 10
+    }
+}
+class ZhuanChe extends Car {
+    constructor(number, name) {
+        super(number, name)
+        this.price = 15
+    }
+}
+
+class Trip {
+    constructor(car) {
+        this.car = car
+    }
+    start() {
+        console.log(`行程开始，名称：${this.car.name}, 车牌号：${this.car.number}`)
+    }
+    end() {
+        console.log(`行程结束，价格：${this.car.price * 5}`)
+    }
+}
+
+let car = new KuaiChe('沪A666', '雷克萨斯');
+let trip = new Trip(car)
+trip.start()
+trip.end()
