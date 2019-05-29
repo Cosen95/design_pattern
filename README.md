@@ -119,3 +119,5 @@ Vue.component('async-example', function(resolve, reject) {
 ### 单例模式
 * 系统中被唯一使用
 * 一个类只有一个实例
+#### 应用场景
+* jQuery只有一个$
