@@ -1,6 +1,6 @@
 // import oop from './oop_example';
 // import './design_principle';
-import './pattern/singleCase';
+import './pattern/adapter';
 
 // class Info {
 //     constructor(name) {
