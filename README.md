@@ -115,3 +115,7 @@ Vue.component('async-example', function(resolve, reject) {
     }, 1000)
 })
 ```
+
+### 单例模式
+* 系统中被唯一使用
+* 一个类只有一个实例
