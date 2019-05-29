@@ -177,3 +177,42 @@ login2.hide()
 ### 适配器模式
 * 旧接口格式和使用者不兼容
 * 中间加一个适配转换接口
+#### 应用场景
+* 封装旧接口
+```
+ajax({
+    url: '',
+    type: 'post',
+    dataType: 'application/json',
+    data: {
+        id: 3
+    }
+})
+.done(function() {
+
+})
+var $ = {
+    ajax: function(options) {
+        return ajax(options)
+    }
+}
+
+$.ajax({
+    // ...
+})
+```
+
+* vue computed
+```
+var vm = new Vue({
+    el: '#example',
+    data: {
+        message: 'Hello'
+    },
+    computed: {
+        reverseMessage: function() {
+            return this.message.split('').reverse().join('')
+        }
+    }
+})
+```

@@ -1,3 +1,5 @@
+// 单例模式
+
 // java代码实现
 // public class SingleObject {
 //     // 注意，私有化构造函数，外部不能new，只能内部new
