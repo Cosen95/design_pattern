@@ -121,3 +121,55 @@ Vue.component('async-example', function(resolve, reject) {
 * 一个类只有一个实例
 #### 应用场景
 * jQuery只有一个$
+```
+if(window.jQuery != null) {
+    return window.jQuery
+} else {
+    // 初始化...
+}
+```
+
+* 登录框
+```
+class LoginForm {
+    constructor() {
+        this.state = 'hide'
+    }
+    show() {
+        if(this.state === 'show') {
+            alert('已经显示')
+            return
+        }
+        this.state = 'show'
+        console.log('登录框已显示')
+    }
+    hide() {
+        if(this.state === 'hide') {
+            alert('已经隐藏')
+            return
+        }
+        this.state = 'hide'
+        console.log('登录框已隐藏')
+    }
+}
+LoginForm.getInstance = (function() {
+    let instance
+    return function() {
+        if(!instance) {
+            instance = new LoginForm()
+        }
+        return instance
+    }
+})()
+
+let login1 = LoginForm.getInstance()
+login1.show()
+
+let login2 = LoginForm.getInstance()
+login2.hide()
+
+```
+
+* 购物车(和登录框类似)
+
+* vuex和redux中的store
