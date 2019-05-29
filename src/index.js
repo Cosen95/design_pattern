@@ -1,6 +1,6 @@
 // import oop from './oop_example';
 // import './design_principle';
-import './pattern/adapter';
+import './pattern/decorator';
 
 // class Info {
 //     constructor(name) {
